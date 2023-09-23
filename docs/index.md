@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Digital Garden"
   text: 
-  tagline: Study materials standing on the shoulders of others"agline
+  tagline: Study materials standing on the shoulders of giant
   actions:
     - theme: brand
       text: Markdown Examples

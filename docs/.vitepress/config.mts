@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/digital-garden',
+  base: '/',
   title: "digital-garden",
   description: "Study materials standing on the shoulders of others",
   themeConfig: {

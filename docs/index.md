@@ -5,21 +5,21 @@ layout: home
 hero:
   name: "Digital Garden"
   text: 
-  tagline: Study materials standing on the shoulders of giant
+  tagline: Study materials standing on the shoulders of giant.
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Get Started
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: Alt
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Geeker Admin
+    details: Based on Vue3.3, TypeScript, VITE4, Pinia, Element-Plus open source background management framework
+  - title: Element Plus
+    details: A Vue.js 3 UI Library made by Element team
+  - title: Maskbook
+    details: Mask Network is a portal to the new, open internet, that bridge from Web2.0 to Web3.0
 ---
 

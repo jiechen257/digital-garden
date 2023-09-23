@@ -1,26 +1,23 @@
 import { defineConfig } from 'vitepress'
+import { navItems, sidebarItems } from './route'
+
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/',
   title: "digital-garden",
-  description: "Study materials standing on the shoulders of others",
+  description: "Study materials standing on the shoulders of giant.",
+  head: [
+    [
+      'link',{ rel: 'icon', href: '/favicon.ico' }
+    ]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    nav: navItems,
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: sidebarItems,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/jiechen257/digital-garden' }

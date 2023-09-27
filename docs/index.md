@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /markdown-examples
+      link: /examples/markdown-examples
     - theme: alt
       text: Alt
-      link: /api-examples
+      link: /examples/api-examples
 
 features:
   - title: Geeker Admin

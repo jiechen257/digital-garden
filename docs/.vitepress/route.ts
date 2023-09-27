@@ -1,4 +1,4 @@
-import results from "../../scripts/readFileToRoute";
+import results from "../../scripts/autoGenerateRoutes";
 console.log("result---", JSON.stringify(results));
 
 export const navItems = [

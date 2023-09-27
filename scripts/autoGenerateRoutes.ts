@@ -2,7 +2,6 @@ import * as fs from "fs";
 import * as path from "path";
 
 // 获取当前路径下 './docs' 目录中的文件夹名，排除 .vitepress 和 public 文件夹
-// const docsPath = path.join(__dirname, './');
 const docsPath = "./docs";
 const excludedFolders = [".vitepress", "public"];
 const folderNames = fs

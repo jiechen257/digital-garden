@@ -5,9 +5,10 @@ import { navItems, sidebarItems } from './route'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "digital-garden",
+  title: "Digital Garden",
   description: "Study materials standing on the shoulders of giant.",
   lastUpdated: true,
+  cleanUrls: true,
   head: [
     [
       'link',{ rel: 'icon', href: '/favicon.png' }

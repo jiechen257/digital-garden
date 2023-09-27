@@ -145,4 +145,13 @@ const useTheme = (themeConfig: ThemeConfigProp) => {
 	};
 };
 ```
+## 类型声明
+依赖包类型声明文件不全，需要自己补充
+——逃逸大法
+```ts
+declare module "qs";
+declare module "nprogress";
+declare module "js-md5";
+declare module "react-transition-group";
+```
 

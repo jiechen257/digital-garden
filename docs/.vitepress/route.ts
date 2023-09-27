@@ -2,7 +2,7 @@ import results from "../../scripts/autoGenerateRoutes";
 
 export const navItems = [
 	{ text: "Home", link: "/" },
-	{ text: "Examples", link: "/examples/markdown-examples" },
+	{ text: "Projects", link: "/examples/markdown-examples" },
 ];
 
 /**
@@ -29,6 +29,5 @@ export const navItems = [
 			},
 		];
  */
-export const sidebarItems = [...results]
-
-
+console.log(JSON.stringify(results));
+export const sidebarItems = [...results];

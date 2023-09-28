@@ -145,9 +145,12 @@ const useTheme = (themeConfig: ThemeConfigProp) => {
 	};
 };
 ```
+
 ## 类型声明
+
 依赖包类型声明文件不全，需要自己补充
 ——逃逸大法
+
 ```ts
 declare module "qs";
 declare module "nprogress";
@@ -155,3 +158,50 @@ declare module "js-md5";
 declare module "react-transition-group";
 ```
 
+## 全屏工具 screenFull
+
+via:
+
+- https://github.com/sindresorhus/screenfull
+- [FullScreen API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fullscreen_API)
+
+```js
+import screenfull from "screenfull";
+
+if (screenfull.isEnabled) {
+	screenfull.toggle();
+}
+```
+
+## 引导页
+
+使用 driver.js, via: https://github.com/kamranahmedse/driver.js
+
+```js
+import { driver } from "driver.js";
+import "driver.js/dist/driver.css";
+
+const driverObj = driver({
+	showProgress: true,
+	steps: [
+		{
+			element: ".page-header",
+			popover: { title: "Title", description: "Description" },
+		},
+		{
+			element: ".top-nav",
+			popover: { title: "Title", description: "Description" },
+		},
+		{
+			element: ".sidebar",
+			popover: { title: "Title", description: "Description" },
+		},
+		{
+			element: ".footer",
+			popover: { title: "Title", description: "Description" },
+		},
+	],
+});
+
+driverObj.drive();
+```

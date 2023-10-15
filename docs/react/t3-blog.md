@@ -76,3 +76,32 @@ model User {
 >
 > TEXT 类型在数据库中以二进制格式存储文本内容，适合存储大段文本，但不适合进行字符串搜索和比较。如果需要进行文本搜索操作，可以考虑使用全文搜索引擎或其他文本搜索技术
 
+## robots.txt
+
+robots.txt 文件是一个用于控制搜索引擎爬虫访问网站的文本文件
+
+它位于网站的根目录，并包含一些规则，告诉搜索引擎爬虫哪些页面或目录可以被爬取，哪些不可以
+
+- User-agent: _：这一行指定了针对所有搜索引擎爬虫的规则。_ 表示通用规则适用于所有爬虫。
+- Disallow: /private/：这一行指示搜索引擎爬虫不应该访问网站中的 /private/ 目录。这意味着该目录下的内容将不被搜索引擎索引。
+- Disallow: /restricted/：类似地，这一行指示搜索引擎爬虫不应该访问网站中的 /restricted/ 目录。
+- Allow: /public/：这一行是一个例外规则，表示搜索引擎爬虫允许访问 /public/ 目录。即使前面有 "Disallow" 规则，"Allow" 规则可以覆盖其限制，以确保特定目录或页面可以被爬取
+
+## package.json
+
+### dompurify
+
+DOMPurify 是一个仅限 DOM 的，超快速的，超级宽容的 XSS 清理器，用于 HTML，MathML 和 SVG
+
+> DOMPurify 可净化 HTML 并防止 XSS 攻击。您可以向 DOMPurify 提供包含脏 HTML 内容的字符串，它将返回一个包含干净 HTML 内容的字符串（除非另有配置）。DOMPurify 会清除所有包含危险 HTML 的内容，从而防止 XSS 攻击和其他龌龊行为。它还非常快。我们使用浏览器提供的技术，并将其转化为 XSS 过滤器。浏览器速度越快，DOMPurify 的速度也就越快。
+
+### marked
+
+markdown 解析器
+
+### metascraper
+一个库，使用Open Graph，Microdata，RDFa，Twitter Cards，JSON-LD，HTML等从网站轻松获取统一元数据
+
+### remark
+markdown的序列化加解析功能的处理器
+

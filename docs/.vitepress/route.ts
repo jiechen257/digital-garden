@@ -29,5 +29,5 @@ export const navItems = [
 			},
 		];
  */
-console.log(JSON.stringify(results));
+// console.log(JSON.stringify(results));
 export const sidebarItems = [...results];

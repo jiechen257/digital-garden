@@ -100,8 +100,27 @@ DOMPurify 是一个仅限 DOM 的，超快速的，超级宽容的 XSS 清理器
 markdown 解析器
 
 ### metascraper
-一个库，使用Open Graph，Microdata，RDFa，Twitter Cards，JSON-LD，HTML等从网站轻松获取统一元数据
+
+一个库，使用 Open Graph，Microdata，RDFa，Twitter Cards，JSON-LD，HTML 等从网站轻松获取统一元数据
 
 ### remark
-markdown的序列化加解析功能的处理器
+
+markdown 的序列化加解析功能的处理器
+
+## src
+
+### main()函数
+异常兜底
+```js
+const main = async () => {
+	// do something
+	await Promise.resolve({});
+	// do another thing
+};
+
+main().catch((e) => {
+	console.error(e);
+	process.exit(1);
+});
+```
 

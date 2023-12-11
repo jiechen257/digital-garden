@@ -16,13 +16,13 @@ hero:
 
 features:
   - title: Geeker Admin
-    details: Based on Vue3.3, TypeScript, VITE4, Pinia, Element-Plus open source background management framework
-    link: /vue/geeker-admin
+    details: A modern vue admin. It is based on Vue3, vite and TypeScript.
+    link: /vue/vben-admin
   - title: Element Plus
-    details: A Vue.js 3 UI Library made by Element team
-    link: /vue/element-plus
-  - title: Maskbook
-    details: Mask Network is a portal to the new, open internet, that bridge from Web2.0 to Web3.0
-    link: /react/maskbook
+    details: A Vue.js 3 UI Library made by Element team.
+    link: /component-library/element-plus
+  - title: Ts Blog
+    details: Typescript Fullstack forum made with Next.js, tRPC, Prisma, Next Auth, Tailwind CSS, S3 uploads, Zod & more.
+    link: /react/t3-blog
 ---
 

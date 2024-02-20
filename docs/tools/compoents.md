@@ -1,0 +1,87 @@
+## 手写可拖拽的悬浮按钮
+```html
+<template>
+	<div
+		class="floating-button"
+		ref="buttonRef"
+		:style="{ right: buttonPosition.x + 'px', bottom: buttonPosition.y + 'px' }"
+		@touchstart="startDrag"
+	>
+		<slot><img :src="icon" class="w-50 h-50" alt="" /></slot>
+	</div>
+</template>
+
+<script setup lang="ts">
+	import { ref, onMounted } from "vue";
+	import { throttle } from "@/utils/tool";
+
+	const props = withDefaults(
+		defineProps<{
+			icon?: string;
+			positionRight?: number;
+			positionBottom?: number;
+		}>(),
+		{
+			icon: "https://img.danchuangglobal.com/resource/images/bdcce849-650b-4bf6-9f44-60825ced7ad5.png?x-oss-process=image/quality,q_80/interlace,1",
+			positionRight: 6,
+			positionBottom: 70,
+		}
+	);
+
+	const kfImgUrl =
+		"https://img.danchuangglobal.com/resource/images/bdcce849-650b-4bf6-9f44-60825ced7ad5.png?x-oss-process=image/quality,q_80/interlace,1";
+
+	const buttonRef = ref<HTMLElement | null>(null);
+	const buttonPosition = ref({ x: 0, y: 0 });
+	let offsetX = 0;
+	let offsetY = 0;
+	const THROTTLE_RATE = 16; // 60fps
+
+	// 节流
+	const handleDrag = throttle((event: TouchEvent) => {
+		event.preventDefault(); // 阻止默认滚动行为
+		const touch = event.touches[0];
+		const buttonWidth = buttonRef.value!.offsetWidth;
+		const buttonHeight = buttonRef.value!.offsetHeight;
+		const newX = window.innerWidth - touch.clientX - offsetX - buttonWidth / 2; // 按钮位置 + 二次手指位置 = 偏移距离
+		const newY =
+			window.innerHeight - touch.clientY - offsetY - buttonHeight / 2;
+		const maxX = window.innerWidth - buttonWidth;
+		const maxY = window.innerHeight - buttonHeight;
+		buttonPosition.value = {
+			x: Math.min(maxX, Math.max(0, newX)),
+			y: Math.min(maxY, Math.max(0, newY)),
+		};
+	}, THROTTLE_RATE);
+
+	const stopDrag = () => {
+		document.removeEventListener("touchmove", handleDrag);
+		document.removeEventListener("touchend", stopDrag);
+	};
+
+	const startDrag = (event: TouchEvent) => {
+		event.preventDefault(); // 阻止默认滚动行为
+		const touch = event.touches[0];
+		const buttonRect = buttonRef.value!.getBoundingClientRect();
+		offsetX = touch.clientX - buttonRect.left - buttonRect.width / 2; // 计算初次手指相对按钮偏移位置
+		offsetY = touch.clientY - buttonRect.top - buttonRect.height / 2;
+		document.addEventListener("touchmove", handleDrag);
+		document.addEventListener("touchend", stopDrag);
+	};
+
+	onMounted(() => {
+		buttonPosition.value = {
+			x: props.positionRight!,
+			y: props.positionBottom!,
+		};
+	});
+</script>
+
+<style scoped>
+	.floating-button {
+		position: fixed;
+		z-index: 999;
+		cursor: pointer;
+	}
+</style>
+```

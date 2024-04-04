@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "7212ed7b53c4e499",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c3f231ca61f75c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8292add1efc0a814",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ecf6000c1a9b6dec",
+    "type": "split",
+    "children": [
+      {
+        "id": "64f29a394ab62c28",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8b36a1349932e5b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "67c299763612117b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "flex布局",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7cc830c11ae7dd3c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 311.5
+  },
+  "right": {
+    "id": "f815162754714e5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1160d6a41276d05",
+        "type": "tabs",
+        "dimension": 59.77777777777777,
+        "children": [
+          {
+            "id": "6ee72abfdc7a2abd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f83c379e1a1ad730",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3e182453895b867c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "b7b847082011c168",
+        "type": "tabs",
+        "dimension": 40.22222222222222,
+        "children": [
+          {
+            "id": "c133ab77116d330f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 210.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "f8b36a1349932e5b",
+  "lastOpenFiles": [
+    "笔记/06-🖥️Front-end/TypeScript/vitual-machine.md",
+    "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
+    "笔记/06-🖥️Front-end/TypeScript/TS疑问记录.md",
+    "笔记/06-🖥️Front-end/TypeScript/TS学习.md",
+    "笔记/06-🖥️Front-end/CSS/flex布局和grid布局.md",
+    "笔记/06-🖥️Front-end/CSS/flex布局.md",
+    "笔记/09-🎬Project/mini-code/html-webpack-plugin.md",
+    "笔记/09-🎬Project/mini-code/mini-webpack.md",
+    "笔记/09-🎬Project/mini-code/mini-express.md",
+    "笔记/08-🤖Frontier/web3/比特币的不可替代性.md",
+    "笔记/09-🎬Project/mini-code/mini-http-router.md",
+    "笔记/09-🎬Project/mini-code/mini-koa.md",
+    "笔记/09-🎬Project/mini-code",
+    "笔记/03-✍️刷题/软考.md",
+    "笔记/07-🗄️Back-end/GoLang/GoLang学习.md",
+    "笔记/08-🤖Frontier/web3",
+    "笔记/03-✍️刷题/开发.md",
+    "index.md",
+    "🔌 知识库插件列表.md",
+    "笔记/06-🖥️Front-end/体系知识/发展历程/CSR和SSR.md",
+    "笔记/06-🖥️Front-end/体系知识/发展历程/CSR - SSR 发展历程(React视角.md",
+    "笔记/06-🖥️Front-end/体系知识/发展历程/JavaScript 框架的四个时代.md",
+    "笔记/06-🖥️Front-end/开发规范/命名规范.md",
+    "笔记/06-🖥️Front-end/CSS/层叠上下文.md",
+    "笔记/08- 🎬 Project/access/2023 年度 Q3 绩效自评.pdf",
+    "笔记/09- 📃 interview/interview-项目回答.md",
+    "笔记/09- 📃 interview/interview-背景回答.md",
+    "笔记/09- 📃 interview/述职答辩.md",
+    "笔记/09- 📃 interview/面经.md",
+    "vite.config.ts.timestamp-1709358541796-e497472a1079f.mjs",
+    "vite.config.ts.timestamp-1709358497147-7f6caed8a34fd.mjs"
+  ]
+}

@@ -28,7 +28,7 @@ export default defineConfig({
         sizes: "180x180",
       },
     ],
-    ["link", { rel: "icon", href: "/logo.svg", type: "image/svg+xml" }],
+    ["link", { rel: "icon", href: "/favicon.ico", type: "image/x-icon" }],
     [
       "link",
       {

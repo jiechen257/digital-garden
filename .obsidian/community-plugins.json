@@ -1,7 +1,7 @@
 [
-  "easy-typing-obsidian",
   "obsidian-auto-link-title",
   "obsidian-admonition",
   "obsidian-image-auto-upload-plugin",
-  "obsidian-style-settings"
+  "easy-typing-obsidian",
+  "obsidian-linter"
 ]

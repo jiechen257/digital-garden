@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
+                "file": "笔记/Vue/vben-admin.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
+                "file": "笔记/Vue/vben-admin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
+                "file": "笔记/Vue/vben-admin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md"
+                "file": "笔记/Vue/vben-admin.md"
               }
             }
           }
@@ -154,8 +154,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f8b36a1349932e5b",
+  "active": "8292add1efc0a814",
   "lastOpenFiles": [
+    "笔记/GoLang/gin-skeleton.md",
+    "笔记/Vue/vben-admin.md",
     "笔记/06-🖥️Front-end/TypeScript/vitual-machine.md",
     "笔记/06-🖥️Front-end/TypeScript/业务代码中如何用好TypeScript.md",
     "笔记/06-🖥️Front-end/TypeScript/TS疑问记录.md",
@@ -183,8 +185,6 @@
     "笔记/08- 🎬 Project/access/2023 年度 Q3 绩效自评.pdf",
     "笔记/09- 📃 interview/interview-项目回答.md",
     "笔记/09- 📃 interview/interview-背景回答.md",
-    "笔记/09- 📃 interview/述职答辩.md",
-    "笔记/09- 📃 interview/面经.md",
     "vite.config.ts.timestamp-1709358541796-e497472a1079f.mjs",
     "vite.config.ts.timestamp-1709358497147-7f6caed8a34fd.mjs"
   ]

@@ -3,5 +3,7 @@
   "obsidian-admonition",
   "obsidian-image-auto-upload-plugin",
   "easy-typing-obsidian",
-  "obsidian-linter"
+  "obsidian-linter",
+  "contribution-graph",
+  "dataview"
 ]

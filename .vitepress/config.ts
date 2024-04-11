@@ -75,7 +75,7 @@ export default defineConfig({
     footer: {
       message:
         'Powered by <a href="https://github.com/nolebase/nolebase">Digital Garden</a>',
-      copyright: "Rebuild in 2024  &nbsp;&nbsp;|&nbsp;&nbsp;  Start in 2021",
+      copyright: "Rebuild in 2024  &nbsp;&nbsp;|&nbsp;&nbsp;  Start in 2022",
     },
     search: {
       provider: "local",

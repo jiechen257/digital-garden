@@ -9,6 +9,70 @@
       }
     },
     {
+      "relativePath": "笔记/MiniCode/html-webpack-plugin.md",
+      "hashes": {
+        "sha256": {
+          "content": "b85699ce7274ae8fc3beb3d6f8dfd22ff26f934c754274ed69d7e3d96d42fc86"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/MiniCode/mini-express.md",
+      "hashes": {
+        "sha256": {
+          "content": "cb7bba17504fb73ed63c778fa1c2ed4051f3171068d402ff3ed3d5bb4ea00063"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/MiniCode/mini-http-router.md",
+      "hashes": {
+        "sha256": {
+          "content": "95b1226d4dded83f701443339211b559af79ca2278f0c606378df44b04e7426e"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/MiniCode/mini-koa.md",
+      "hashes": {
+        "sha256": {
+          "content": "2b84e8165bb237a21930be2afd59c9386fda116a50e0ea606c1035c7d9c6fd24"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/MiniCode/mini-webpack.md",
+      "hashes": {
+        "sha256": {
+          "content": "9af8124e551991ab1149242cab828818989c35d93cb809465466e14c1ad9310d"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/MiniCode/native-http-server.md",
+      "hashes": {
+        "sha256": {
+          "content": "b85af7c1092744b458300b992c16c8891fbc4a6b0059da6f9a0dd851a7c01375"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/MiniCode/serve.md",
+      "hashes": {
+        "sha256": {
+          "content": "5fe81266ef09c8993c0baefc75da384f9e84e70b15e50c406434f02e964bcadc"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/MiniCode/vdom.md",
+      "hashes": {
+        "sha256": {
+          "content": "6c5ffa5671058a5f4a74a853eac0e1803477a28a054df8453cad3cd54e0b69a9"
+        }
+      }
+    },
+    {
       "relativePath": "笔记/React/hooks-admin.md",
       "hashes": {
         "sha256": {
@@ -145,10 +209,18 @@
       }
     },
     {
-      "relativePath": "笔记/Vue/vben-admin.md",
+      "relativePath": "笔记/Vue/vben-admin/hooks/useWaterMark.md",
       "hashes": {
         "sha256": {
-          "content": "9cc58516c84650c0de06b543676c18947833a95e4d97feb9b93955ab136a5971"
+          "content": "6d6ebcd18729e659e87449c7d53e1bd703fe9233766d82e3bedf6464c57be667"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/Vue/vben-admin/index.md",
+      "hashes": {
+        "sha256": {
+          "content": "11f5d87bb5dfa5a9d62976fc9d3be129c400ae3549b5bf5138ace50a92f3b103"
         }
       }
     },
@@ -156,12 +228,67 @@
       "relativePath": "笔记/index.md",
       "hashes": {
         "sha256": {
-          "content": "415231d80ff8b70e582971ef9a4575c53b5c21ada01d13608a7aeee89a24713d"
+          "content": "79fa16da5bc9d1770e2c9db22ccaa630e75b781a97a1310ef74f2d3d1a1aba73"
         }
       }
     }
   ],
   "sidebar": [
+    {
+      "index": "MiniCode",
+      "text": "MiniCode",
+      "collapsed": true,
+      "items": [
+        {
+          "index": "html-webpack-plugin",
+          "text": "html-webpack-plugin",
+          "link": "/笔记/MiniCode/html-webpack-plugin",
+          "lastUpdated": 1712498008000
+        },
+        {
+          "index": "mini-koa",
+          "text": "mini-koa",
+          "link": "/笔记/MiniCode/mini-koa",
+          "lastUpdated": 1712498008000
+        },
+        {
+          "index": "mini-http-router",
+          "text": "mini-http-router",
+          "link": "/笔记/MiniCode/mini-http-router",
+          "lastUpdated": 1712498008000
+        },
+        {
+          "index": "mini-express",
+          "text": "mini-express",
+          "link": "/笔记/MiniCode/mini-express",
+          "lastUpdated": 1712498008000
+        },
+        {
+          "index": "mini-webpack",
+          "text": "mini-webpack",
+          "link": "/笔记/MiniCode/mini-webpack",
+          "lastUpdated": 1712498008000
+        },
+        {
+          "index": "serve",
+          "text": "serve",
+          "link": "/笔记/MiniCode/serve",
+          "lastUpdated": 1712586659000
+        },
+        {
+          "index": "native-http-server",
+          "text": "native-http-server",
+          "link": "/笔记/MiniCode/native-http-server",
+          "lastUpdated": 1712586659000
+        },
+        {
+          "index": "vdom",
+          "text": "vdom",
+          "link": "/笔记/MiniCode/vdom",
+          "lastUpdated": 1712498008000
+        }
+      ]
+    },
     {
       "index": "GoLang",
       "text": "GoLang",
@@ -241,22 +368,22 @@
                   "lastUpdated": 1712236540000
                 },
                 {
-                  "index": "button",
-                  "text": "button",
-                  "link": "/笔记/UI/ElementPlus/components/button",
-                  "lastUpdated": 1712236540000
-                },
-                {
                   "index": "cascader",
                   "text": "cascader",
                   "link": "/笔记/UI/ElementPlus/components/cascader",
                   "lastUpdated": 1712236540000
                 },
                 {
+                  "index": "button",
+                  "text": "button",
+                  "link": "/笔记/UI/ElementPlus/components/button",
+                  "lastUpdated": 1712236540000
+                },
+                {
                   "index": "icon",
                   "text": "icon",
                   "link": "/笔记/UI/ElementPlus/components/icon",
-                  "lastUpdated": 1712236540000
+                  "lastUpdated": 1712239926000
                 },
                 {
                   "index": "popper",
@@ -279,6 +406,14 @@
               ]
             },
             {
+              "index": "docs",
+              "text": "docs",
+              "collapsed": true,
+              "items": [],
+              "link": "/笔记/UI/ElementPlus/docs/index",
+              "lastUpdated": 1712236540000
+            },
+            {
               "index": "env-config",
               "text": "env-config",
               "collapsed": true,
@@ -292,14 +427,6 @@
                   "lastUpdated": 1712236540000
                 }
               ]
-            },
-            {
-              "index": "docs",
-              "text": "docs",
-              "collapsed": true,
-              "items": [],
-              "link": "/笔记/UI/ElementPlus/docs/index",
-              "lastUpdated": 1712236540000
             },
             {
               "index": "hooks",
@@ -341,8 +468,24 @@
         {
           "index": "vben-admin",
           "text": "vben-admin",
-          "link": "/笔记/Vue/vben-admin",
-          "lastUpdated": 1712236540000
+          "collapsed": true,
+          "items": [
+            {
+              "index": "hooks",
+              "text": "hooks",
+              "collapsed": true,
+              "items": [
+                {
+                  "index": "useWaterMark",
+                  "text": "useWaterMark",
+                  "link": "/笔记/Vue/vben-admin/hooks/useWaterMark",
+                  "lastUpdated": 0
+                }
+              ]
+            }
+          ],
+          "link": "/笔记/Vue/vben-admin/index",
+          "lastUpdated": 0
         }
       ]
     }

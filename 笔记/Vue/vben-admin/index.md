@@ -5,6 +5,79 @@ tech stack: Vue3 + TypeScript + Vite4 + Pinia + Ant Design Vue
 :::
 
 
+## 布局
+
+### Dashbord
+先用 div 上下横屏，在利用 `@media (min-width: 768px)` 规则进行判断 flex 布局
+
+```html
+ <div class="md:flex">
+    <template v-for="(item, index) in growCardList" :key="item.title">
+      <Card
+        size="small"
+        :loading="loading"
+        :title="item.title"
+        class="md:w-1/4 w-full !md:mt-0":class="{ '!md:mr-4': index + 1 < 4, '!mt-4': index > 0 }"   
+         >
+	    <Card/>
+	</template>
+</div>
+```
+
+> 使用 template 作为循环渲染的模板标签：
+> - 语义化
+> - 性能优化
+
+## 事件
+### 右键点击
+
+```html
+<!-- 右键点击事件 -->
+ <a-button type="primary" @contextmenu="handleContext"> Right Click on me </a-button>
+```
+
+### 复制文本
+```ts
+export function copyText(text: string, prompt: string | null = '已成功复制到剪切板!') {
+  if (navigator.clipboard) {
+    return navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        prompt && message.success(prompt);
+      })
+      .catch((error) => {
+        message.error('复制失败!' + error.message);
+        return error;
+      });
+  }
+  if (Reflect.has(document, 'execCommand')) {
+    return new Promise<void>((resolve, reject) => {
+      try {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        // 在手机 Safari 浏览器中，点击复制按钮，整个页面会跳动一下
+        textArea.style.width = '0';
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999px';
+        textArea.style.top = '10px';
+        textArea.setAttribute('readonly', 'readonly');
+        document.body.appendChild(textArea);
+        textArea.select(); // 先选中需要复制的内容
+        document.execCommand('copy'); // 将选中的内容复制到剪贴板
+        document.body.removeChild(textArea);
+
+        prompt && message.success(prompt);
+        resolve();
+      } catch (error) {
+        message.error('复制失败!' + error.message);
+        reject(error);
+      }
+    });
+  }
+  return Promise.reject(`"navigator.clipboard" 或 "document.execCommand" 中存在API错误, 拷贝失败!`);
+}
+```
+
 ## ProTable 组件
 
 dom 结构
@@ -105,5 +178,24 @@ export function useContext<T>(
 ): ShallowUnwrap<T> {
   return inject(key, defaultValue || {});
 }
+```
+
+## Vue
+### 全局注册组件
+
+Vue 会自动检测到导出的组件是否具有 install 方法,并自动调用该方法进行全局注册
+
+```ts
+export const withInstall = <T extends CustomComponent>(component: T, alias?: string) => {
+  (component as Record<string, unknown>).install = (app: App) => {
+    const compName = component.name || component.displayName;
+    if (!compName) return;
+    app.component(compName, component);
+    if (alias) {
+      app.config.globalProperties[alias] = component;
+    }
+  };
+  return component as WithInstall<T>;
+};
 ```
 

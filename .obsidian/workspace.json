@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/Vue/vben-admin.md",
+                "file": "笔记/Vue/vben-admin/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/Vue/vben-admin.md",
+                "file": "笔记/Vue/vben-admin/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/Vue/vben-admin.md",
+                "file": "笔记/Vue/vben-admin/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/Vue/vben-admin.md"
+                "file": "笔记/Vue/vben-admin/index.md"
               }
             }
           }
@@ -156,6 +156,9 @@
   },
   "active": "8292add1efc0a814",
   "lastOpenFiles": [
+    "笔记/UI/ElementPlus/hooks/useNamespace.md",
+    "笔记/Vue/vben-admin/index.md",
+    "笔记/Vue/vben-admin/hooks/useFullScreen.md",
     "笔记/index.md",
     "笔记/Vue/vben-admin.md",
     "笔记/GoLang/gin-skeleton.md",
@@ -181,10 +184,7 @@
     "笔记/06-🖥️Front-end/体系知识/发展历程/CSR和SSR.md",
     "笔记/06-🖥️Front-end/体系知识/发展历程/CSR - SSR 发展历程(React视角.md",
     "笔记/06-🖥️Front-end/体系知识/发展历程/JavaScript 框架的四个时代.md",
-    "笔记/06-🖥️Front-end/开发规范/命名规范.md",
-    "笔记/06-🖥️Front-end/CSS/层叠上下文.md",
     "笔记/08- 🎬 Project/access/2023 年度 Q3 绩效自评.pdf",
-    "笔记/09- 📃 interview/interview-项目回答.md",
     "vite.config.ts.timestamp-1709358541796-e497472a1079f.mjs",
     "vite.config.ts.timestamp-1709358497147-7f6caed8a34fd.mjs"
   ]

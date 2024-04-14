@@ -1,6 +1,3 @@
-
-
-
 ```js
 const isPrimitive = x => typeof x === 'string' || typeof x === 'number'
 
@@ -216,4 +213,3 @@ function patch (oldVnode, newVnode) {
 
 export { patch, h }
 ```
-

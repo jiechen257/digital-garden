@@ -1,4 +1,5 @@
 ## express 缺点
+
 express 的缺点：
 1. 重路由的中间件设计。在 `express` 中所有中间件都会通过 `path-to-regexp` 去匹配路由正则，造成一定的性能下降 (较为有限)。
 2. `querystring` 默认中间件。在 express 中，每次请求都内置中间件解析 qs，造成一定的性能下降 (在 koa 中为按需解析)。
@@ -8,6 +9,7 @@ express 的缺点：
 6. `express` 默认集成了许多中间件，如 static
 
 ## 匹配中间件
+
 ```js
 // 对中间件的一层抽象
 class Layer {
@@ -33,6 +35,7 @@ class Layer {
 ```
 
 ## 收集中间件
+
 ```js
 class Application {
   // 注册应用级中间件，收集所有的应用级中间至 this._router.stack 中，后将实现洋葱模型
@@ -118,4 +121,3 @@ class Router {
   }
 }
 ```
-

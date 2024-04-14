@@ -1,4 +1,5 @@
 ## 原生的 http 框架
+
 ```js
 const http = require('http')
 const server = http.createServer((req, res) => { res.end('hello world') })
@@ -60,6 +61,7 @@ class Application {
 ```
 
 ## Context 上下文的组装
+
 > 注意到 koa 中是使用 `ctx.body` 来写入响应
 
 - 使用 `Context(req, res)` 封装 `request/response` ，构造 Context 对象
@@ -92,7 +94,7 @@ class Context {
 }
 ```
 
-## Middleware中间件的集成
+## Middleware 中间件的集成
 
 现实场景中，middleware 肯定是多个，如错误处理、日志、权限校验、限流等
 
@@ -133,6 +135,7 @@ class Application {
 
 每个中间件的 `next` 是执行下一个中间件，我们怎么知道下一个 next 的下一个 next 是什么？
 —— 递归
+
 ```js
 // compose函数
 function compose (middlewares) {
@@ -178,6 +181,7 @@ app.use(async (ctx, next) => {
 ```
 
 ## 综上
+
 ```js
 // [http 模块](https://nodejs.org/api/http.html)，构建 Node 框架的核心 API
 const http = require('http')

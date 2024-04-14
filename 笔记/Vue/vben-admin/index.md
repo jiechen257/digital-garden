@@ -4,10 +4,10 @@ source code: https://github.com/vbenjs/vue-vben-admin
 tech stack: Vue3 + TypeScript + Vite4 + Pinia + Ant Design Vue
 :::
 
-
 ## 布局
 
-### Dashbord
+### Dashboard
+
 先用 div 上下横屏，在利用 `@media (min-width: 768px)` 规则进行判断 flex 布局
 
 ```html
@@ -29,6 +29,7 @@ tech stack: Vue3 + TypeScript + Vite4 + Pinia + Ant Design Vue
 > - 性能优化
 
 ## 事件
+
 ### 右键点击
 
 ```html
@@ -37,6 +38,7 @@ tech stack: Vue3 + TypeScript + Vite4 + Pinia + Ant Design Vue
 ```
 
 ### 复制文本
+
 ```ts
 export function copyText(text: string, prompt: string | null = '已成功复制到剪切板!') {
   if (navigator.clipboard) {
@@ -78,7 +80,32 @@ export function copyText(text: string, prompt: string | null = '已成功复制�
 }
 ```
 
-## ProTable 组件
+## 功能
+
+### 图片裁剪
+
+[Cropper.js](https://fengyuanchen.github.io/cropperjs/)
+
+### 编辑器
+
+#### 代码编辑器
+
+[CodeMirror 5](https://codemirror.net/5/)
+
+#### Markdown 编辑器
+
+[GitHub - Vanessa219/vditor.](https://github.com/Vanessa219/vditor)
+
+#### 富文本
+
+[The Most Advanced WYSIWYG Editor | Trusted Rich Text Editor | TinyMCE](https://www.tiny.cloud/)
+
+## 复杂表单解决方案
+
+- [Surely Vue](https://www.surely.cool/doc/edit)
+- [vxe-table](https://github.com/x-extends/vxe-table)
+
+### Portable 组件
 
 dom 结构
 
@@ -108,10 +135,10 @@ dom 结构
 </template>
 ```
 
-
 ## 为什么不？
 
 ### 双重断言
+
 ```ts
   const ENV = import.meta.env.DEV
     ? // Get the global configuration (the configuration will be extracted independently when packaging)
@@ -128,6 +155,7 @@ dom 结构
 —— 这种方式虽然不太优雅,但在某些情况下是必要的,比如处理动态类型或者不确定的数据结构时
 
 ## Tips
+
 ### 用好 `unref()`
 
 ```ts
@@ -138,7 +166,9 @@ if (route.name === REDIRECT_NAME) {
 	return;
 }
 ```
+
 ### 函数中应用可选链式符
+
 ```js
 // 1
 obj.func?.()
@@ -151,7 +181,8 @@ fun?.(arg1, arg2)
 ```
 
 ### .unRef 和 toRaw
--  `toRaw()` 可以返回由 [`reactive()`](https://cn.vuejs.org/api/reactivity-core.html#reactive)、[`readonly()`](https://cn.vuejs.org/api/reactivity-core.html#readonly)、[`shallowReactive()`](https://cn.vuejs.org/api/reactivity-advanced.html#shallowreactive) 或者 [`shallowReadonly()`](https://cn.vuejs.org/api/reactivity-advanced.html#shallowreadonly) 创建的代理对应的原始对象
+
+- `toRaw()` 可以返回由 [`reactive()`](https://cn.vuejs.org/api/reactivity-core.html#reactive)、[`readonly()`](https://cn.vuejs.org/api/reactivity-core.html#readonly)、[`shallowReactive()`](https://cn.vuejs.org/api/reactivity-advanced.html#shallowreactive) 或者 [`shallowReadonly()`](https://cn.vuejs.org/api/reactivity-advanced.html#shallowreadonly) 创建的代理对应的原始对象
 - val = isRef(val) ? val.value : val
 
 ```ts
@@ -169,8 +200,8 @@ export function useAppInject() {
 }
 ```
 
-
 ### 为 obj 的 key 赋默认值
+
 ```ts
 export function useContext<T>(
   key: InjectionKey<T> = Symbol(),
@@ -181,6 +212,7 @@ export function useContext<T>(
 ```
 
 ## Vue
+
 ### 全局注册组件
 
 Vue 会自动检测到导出的组件是否具有 install 方法,并自动调用该方法进行全局注册
@@ -198,4 +230,3 @@ export const withInstall = <T extends CustomComponent>(component: T, alias?: str
   return component as WithInstall<T>;
 };
 ```
-

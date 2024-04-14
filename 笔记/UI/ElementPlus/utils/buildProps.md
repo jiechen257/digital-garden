@@ -1,14 +1,17 @@
 ## fromPairs
-先看 `toPairs` 
+
+先看 `toPairs`
+
 ```js
 _.toPairs([['a', 1], ['b', 2], ['c', 3]]);
 => {'a': 1, 'b': 2, 'c': 3}
 ```
 
-`fromPairs`作用则反过来
+`fromPairs` 作用则反过来
 - returns key-value 'paris' composed from an object
 
 ## buildProp
+
 ```ts
 (val) =>
   fromPairs(
@@ -18,9 +21,11 @@ _.toPairs([['a', 1], ['b', 2], ['c', 3]]);
     ])
   )
 ```
+
 将对象转为数组 `[key, option]`, 然后用 option 去 buildProp，得到 key 对应的在 vueProps 下的合法属性约束
 
 ## buildProps
+
 ```ts
 (prop, key) => {
   if (!isObject(prop) || isEpProp(prop)) return prop as any

@@ -7,11 +7,13 @@
 ```
 
 ## 探讨
+
 ### $slot.default 的值
 
 当渲染一个默认的 el-button 时，内部会带上 span 元素
 
 可 $slot.default 的值应当是空，为何 span 会被渲染
+
 ```html
 <template>
   <el-button>
@@ -44,5 +46,4 @@
   } 
 ```
 
-`$slots.default !== null`, 然后 v-if 生效，然后 $slot 在 `{{}}` 里被解析成 `""` 空字符串，所以span元素内为空
-
+`$slots.default !== null`, 然后 v-if 生效，然后 $slot 在 `{{}}` 里被解析成 `""` 空字符串，所以 span 元素内为空

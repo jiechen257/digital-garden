@@ -100,6 +100,50 @@ export function copyText(text: string, prompt: string | null = '已成功复制�
 
 [The Most Advanced WYSIWYG Editor | Trusted Rich Text Editor | TinyMCE](https://www.tiny.cloud/)
 
+### 二维码生成
+
+[qrcode - npm](https://www.npmjs.com/package/qrcode)
+
+### 密码强度校验
+
+[GitHub - dropbox/zxcvbn: Low-Budget Password Strength Estimation](https://github.com/dropbox/zxcvbn)
+
+### 流程图
+
+[GitHub - didi/LogicFlow: A flow chart editing framework focusing on business customization. 专注于业务自定义的流程图编辑框架，支持实现脑图、ER图、UML、工作流等各种图编辑场景。](https://github.com/didi/LogicFlow)
+
+### 引导页
+
+[Driver.js](https://driverjs.com/)
+
+## package. Json 信息
+
+```ts
+import { readPackageJSON } from 'pkg-types'
+
+const pkgJson = await readPackageJSON(root);
+const { dependencies, devDependencies, name, version } = pkgJson;
+
+const __APP_INFO__ = {
+  pkg: { dependencies, devDependencies, name, version },
+  lastBuildTime: dayjs().format('YYYY-MM-DD HH:mm:ss'),
+};
+```
+
+## 网络请求
+
+[基础用法 - ahooks 3.0](https://ahooks.gitee.io/zh-CN/hooks/use-request/basic)
+
+- 自动请求/手动请求
+- 轮询
+- 防抖
+- 节流
+- 屏幕聚焦重新请求
+- 错误重试
+- loading delay
+- SWR(stale-while-revalidate)
+- 缓存
+
 ## 复杂表单解决方案
 
 - [Surely Vue](https://www.surely.cool/doc/edit)

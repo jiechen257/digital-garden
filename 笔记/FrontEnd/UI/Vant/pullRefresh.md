@@ -27,7 +27,7 @@
 
 ```ts
 const state = reactive({
-  status: "normal" as PullRefreshStatus,
+  status: "normal" as PullRefreshStatus, 
   distance: 0,
   duration: 0,
 });
